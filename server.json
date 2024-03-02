@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "content": "Boa tarde",
+      "id": 1
+    },
+    {
+      "content": "Ola meus amigos,hoje terminei tudo que tinha para fazer do trabalho",
+      "id": 2
+    }
+  ]
+}
