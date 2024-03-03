@@ -1,12 +1,14 @@
 {
   "posts": [
     {
-      "content": "Boa tarde",
-      "id": 1
+      "content": "Eai pessoal, como foi o sabado de voces?",
+      "createdAt": "2024-03-03T10:12:23.083Z",
+      "id": 3
     },
     {
-      "content": "Ola meus amigos,hoje terminei tudo que tinha para fazer do trabalho",
-      "id": 2
+      "content": "muito bom e o seu? 😎",
+      "createdAt": "2024-03-03T10:12:56.635Z",
+      "id": 4
     }
   ]
 }

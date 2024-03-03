@@ -13,6 +13,7 @@ interface createPostInput{
 
 interface PostsContextType{
     posts: Post[]
+    fetchPosts: (query?: string) => Promise<void>
     createPosts: (data: createPostInput) => Promise<void>
 }
 
@@ -22,7 +23,7 @@ interface PostProviderProps{
 
 export const PostContext = createContext({} as PostsContextType)
 
-export function PostProvider({children}: PostProviderProps) {
+export function PostsProvider({children}: PostProviderProps) {
     const [posts, setPosts] = useState<Post[]>([])
 
     async function fetchPosts(query?: string) {
@@ -57,6 +58,7 @@ export function PostProvider({children}: PostProviderProps) {
         <PostContext.Provider
             value={{
             posts,
+            fetchPosts,
             createPosts,
         }}
         >
@@ -64,3 +66,5 @@ export function PostProvider({children}: PostProviderProps) {
         </PostContext.Provider>
     )
 }
+
+//postProvider
